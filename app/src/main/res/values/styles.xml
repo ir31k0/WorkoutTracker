@@ -7,6 +7,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:statusBarColor">@color/date_pager_background</item>
+        <item name="titleTextColor">@color/text_light</item>
+    </style>
+    
+    <style name="Toolbar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:textColorSecondary">@color/text_light</item>
     </style>
 
     <style name="Text1" parent="@style/TextAppearance.AppCompat.Title">

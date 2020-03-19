@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
@@ -30,19 +31,16 @@ public class ExerciseTrackerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise_tracker);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayShowTitleEnabled(false);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-
         String currentDate = getIntent().getStringExtra(KEY_EXERCISE_DATE);
         String exerciseName = getIntent().getStringExtra(KEY_EXERCISE_NAME);
 
-        toolbarTitle = findViewById(R.id.date_title);
-        toolbarTitle.setText(exerciseName);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(exerciseName);
+        setSupportActionBar(toolbar);
+        ActionBar supportedActionBar = getSupportActionBar();
+        if (supportedActionBar != null) {
+            supportedActionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         tabLayout = findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);

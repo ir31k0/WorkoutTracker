@@ -56,9 +56,6 @@ public class WorkoutViewerActivity extends AppCompatActivity implements WorkoutC
     private void setupToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayShowTitleEnabled(false);
-        }
     }
 
     private void setupDateBar() {
