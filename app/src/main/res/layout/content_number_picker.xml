@@ -9,7 +9,7 @@
             android:id="@+id/date_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PLACEHOLDER"
+            tools:text="Title"
             style="@style/TextDark"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +52,7 @@
                 android:inputType="number"
                 android:selectAllOnFocus="true"
                 android:imeOptions="actionDone"
-                tools:text="50"
+                tools:text="5.0"
                 />
 
         <ImageButton

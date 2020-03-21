@@ -15,5 +15,11 @@
     <string name="repetition_chooser_title">Repetitions</string>
     <string name="one_more_set_text">1 more set</string>
     <string name="multiple_more_sets_text">%1$d more sets</string>
-
+    <string name="title_all_exercises">All exercises</string>
+    <string name="button_text_add">ADD</string>
+    <string name="button_text_delete">DELETE</string>
+    <string name="dialog_title_comment">Comment</string>
+    <string name="button_text_cancel">CANCEL</string>
+    <string name="button_text_save">SAVE</string>
+    <string name="button_text_add_exercise">Add Exercise</string>
 </resources>
